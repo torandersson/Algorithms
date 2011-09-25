@@ -26,19 +26,19 @@ def sort(list):
 	pivot = get_pivot(list)
 	smaller = []
 	bigger = []
-	index = 0
 	for number in list:
 		if(number <= pivot):
 			smaller.append(number)
 		elif(number >= pivot):
 			bigger.append(number)
-	sort_ed = []
-	sort_ed.extend(sort(smaller))
-	sort_ed.append(pivot)
-	sort_ed.extend(sort(bigger))
+	result = []
+	result.extend(sort(smaller))
+	result.append(pivot)
+	result.extend(sort(bigger))
 	return sort_ed
 
 
+#need to change this into a better pivot picker.
 def get_pivot(list):
 	first = list[0]
 	last = list[len(list)-1]
