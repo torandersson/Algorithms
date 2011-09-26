@@ -35,7 +35,7 @@ def sort(list):
 	result.extend(sort(smaller))
 	result.append(pivot)
 	result.extend(sort(bigger))
-	return sort_ed
+	return result
 
 
 #need to change this into a better pivot picker.
