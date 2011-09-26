@@ -29,7 +29,7 @@ def sort(list):
 	for number in list:
 		if(number <= pivot):
 			smaller.append(number)
-		elif(number >= pivot):
+		elif(number > pivot):
 			bigger.append(number)
 	result = []
 	result.extend(sort(smaller))
